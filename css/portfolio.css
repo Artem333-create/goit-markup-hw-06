@@ -82,3 +82,12 @@
 .portfolio-item:hover .portfolio-overlay {
   transform: translateY(0);
 }
+
+@media (max-width: 767px) {
+  .portfolio-item {
+    width: 100%;
+  }
+  .portfolio-list {
+    flex-direction: column;
+  }
+}

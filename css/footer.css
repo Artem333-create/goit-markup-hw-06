@@ -74,6 +74,7 @@
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .footer-subscribe-form {
@@ -129,4 +130,27 @@
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: #31d0aa;
+}
+
+@media (max-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info {
+    margin-right: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: column;
+    gap: 16px;
+  }
 }

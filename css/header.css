@@ -4,6 +4,7 @@
 
 .header .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -92,4 +93,44 @@
 .contact-link:hover,
 .contact-link:focus {
   color: #404bbf;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .logo {
+    padding: 16px 0;
+    line-height: 1.33;
+  }
+
+  .nav,
+  .contacts {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-title {
+    max-width: 288px;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .hero {
+    padding: 72px 0;
+  }
 }

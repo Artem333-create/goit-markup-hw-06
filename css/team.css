@@ -77,3 +77,13 @@
 .team-social-link:focus {
   background-color: #404bbf;
 }
+
+@media (max-width: 767px) {
+  .team-list {
+    flex-direction: column;
+  }
+
+  .team-item {
+    width: 100%;
+  }
+}
