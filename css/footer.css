@@ -29,6 +29,7 @@
 }
 
 .footer-social-title {
+  text-align: center;
   margin: 0 0 16px;
   color: #ffffff;
   font-size: 16px;
@@ -62,11 +63,6 @@
   background-color: #31d0aa;
 }
 
-.footer-subscribe {
-  width: 453px;
-  margin-left: auto;
-}
-
 .footer-subscribe-title {
   margin: 0 0 16px;
   color: #ffffff;
@@ -75,12 +71,6 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
-
-.footer-subscribe-form {
-  display: flex;
-  align-items: center;
-  gap: 24px;
 }
 
 .footer-subscribe-input {
@@ -132,50 +122,63 @@
   background-color: #31d0aa;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 72px;
-  }
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
+}
 
-  .footer-text {
-    text-align: left;
-  }
+.footer-text {
+  text-align: left;
+}
 
-  .footer-info {
-    margin-right: 0;
-    text-align: center;
-  }
+.footer-info {
+  margin-right: 0;
+  text-align: center;
+}
 
-  .footer-subscribe {
-    width: 100%;
-    margin-left: 0;
-  }
+.footer-subscribe {
+  margin-left: 0;
+}
 
-  .footer-subscribe-title {
-    text-align: center;
-  }
+.footer-subscribe-title {
+  text-align: center;
+}
 
-  .footer-subscribe-form {
-    flex-direction: column;
-    gap: 16px;
-  }
+.footer-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 /* ===== стилі планшета ===== */
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) {
   .footer-container {
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
     gap: 24px;
     row-gap: 72px;
+    padding: 0 108px;
   }
 
   .footer-subscribe {
+    width: 453px;
   }
 
   .footer-subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+  .footer-subscribe-title {
+    text-align: start;
+  }
+  .footer-social-title {
+    text-align: start;
   }
 }
