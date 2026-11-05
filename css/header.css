@@ -99,7 +99,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -132,5 +132,30 @@
 
   .hero {
     padding: 72px 0;
+  }
+}
+
+/* Планшетний */
+
+@media (min-width: 768px) and (max-width: 1157px) {
+  .header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header .logo {
+    margin-right: 0;
+  }
+
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 }
