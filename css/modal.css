@@ -27,8 +27,7 @@
   box-sizing: border-box;
   width: 408px;
   max-width: 100%;
-  min-height: 584px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow:
@@ -262,5 +261,11 @@
 
   .modal-checkbox-label {
     align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal {
+    padding: 72px 24px 24px;
   }
 }
