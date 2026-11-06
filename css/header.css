@@ -117,13 +117,25 @@
 
   .menu-toggle {
     display: block;
-    background-color: #fff;
+    background-color: transparent;
     border: 0;
     padding: 0;
+    cursor: pointer;
+    line-height: 0;
+  }
+
+  .menu-toggle-icon {
+    fill: #2f2f37;
   }
 }
 
-/* Планшетний */
+/* ======= Планшетний ========= */
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .header .container {
