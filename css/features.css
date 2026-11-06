@@ -55,7 +55,6 @@
     line-height: 1.11111;
     letter-spacing: 0.02em;
     text-align: center;
-    gap: 8px;
   }
 
   .features-text {
@@ -78,9 +77,6 @@
 
   .features-item {
     width: calc((100% - 24px) / 2);
-  }
-
-  .section-team {
   }
 
   .features-icon {

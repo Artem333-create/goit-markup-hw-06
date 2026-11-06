@@ -67,11 +67,14 @@
 }
 
 .mobile-menu-contacts {
+  margin-top: auto;
+  font-style: normal;
+}
+
+.mobile-menu-contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: auto;
-  font-style: normal;
 }
 
 .mobile-menu-contacts a {
@@ -83,16 +86,16 @@
   text-decoration: none;
 }
 
-.mobile-menu-contacts a:first-child {
+.mobile-menu-contacts li:first-child a {
   color: #4d5ae5;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .mobile-menu-social-list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 40px 0 0;
+  margin: 48px 0 0;
   padding: 0;
   gap: 40px;
   list-style: none;
@@ -122,4 +125,10 @@
 .mobile-menu-close:hover svg,
 .mobile-menu-close:focus svg {
   fill: #fff;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }

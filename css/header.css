@@ -99,7 +99,7 @@
   display: none;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .header .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -123,18 +123,6 @@
   }
 }
 
-@media (max-width: 767px) {
-  .hero-title {
-    max-width: 288px;
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  .hero {
-    padding: 72px 0;
-  }
-}
-
 /* Планшетний */
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -144,7 +132,7 @@
   }
 
   .header .logo {
-    margin-right: 0;
+    margin-right: 120px;
   }
 
   .contacts-list {

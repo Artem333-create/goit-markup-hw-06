@@ -1,5 +1,5 @@
 .footer {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
 }
 
@@ -152,6 +152,20 @@
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  .footer-subscribe-form {
+    width: 100%;
+  }
+
+  .footer-subscribe-input {
+    width: 100%;
+  }
+}
+
 /* ===== стилі планшета ===== */
 
 @media (min-width: 768px) {
@@ -169,6 +183,10 @@
     width: 453px;
   }
 
+  .footer-subscribe-input {
+    width: 264px;
+  }
+
   .footer-subscribe-form {
     flex-direction: row;
     align-items: center;
@@ -184,6 +202,10 @@
 }
 
 @media (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: nowrap;
