@@ -122,41 +122,39 @@
   background-color: #31d0aa;
 }
 
-@media (max-width: 767px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 72px;
-  }
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 72px;
+}
 
-  .footer-text {
-    text-align: left;
-  }
+.footer-text {
+  text-align: left;
+}
 
-  .footer-info {
-    margin-right: 0;
-    text-align: center;
-  }
+.footer-info {
+  margin-right: 0;
+  text-align: center;
+}
 
-  .footer-subscribe {
-    margin-left: 0;
-  }
+.footer-subscribe {
+  margin-left: 0;
+}
 
-  .footer-subscribe-title {
-    text-align: center;
-  }
+.footer-subscribe-title {
+  text-align: center;
+}
 
-  .footer-subscribe-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  }
+.footer-subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 }
 
 /* ===== стилі планшета ===== */
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) {
   .footer-container {
     justify-content: start;
     flex-wrap: wrap;
@@ -187,10 +185,10 @@
 
 @media (min-width: 1158px) {
   .footer-container {
-    flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
     align-items: flex-start;
+    justify-content: flex-start;
     gap: 0;
     padding: 0;
   }
